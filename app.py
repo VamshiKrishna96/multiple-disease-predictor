@@ -1,8 +1,6 @@
 from flask import Flask, render_template, redirect, request
 import numpy as np
 import pickle
-import joblib
-import os
 
 app = Flask(__name__)
 
