@@ -1,4 +1,4 @@
-argon2-cffi @ file:///D:/bld/argon2-cffi_1590330150029/work
+argon2-cffi
 async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
 attrs @ file:///tmp/build/80754af9/attrs_1620827162558/work
 backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
