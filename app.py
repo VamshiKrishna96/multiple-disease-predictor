@@ -29,14 +29,6 @@ def predict(values, dic):
         values = np.asarray(values)
         return model_4.predict(values.reshape(1, -1))[0]
 
-    elif len(values) == 10:
-
-        model_5 = pickle.load(open('models/stroke.pkl','rb'))
-        values = np.asarray(values)
-        return model_5.predict(values.reshape(1, -1))[0]
-
-
-
 @app.route("/")
 def home_page():
     return render_template('home.html')
@@ -58,12 +50,7 @@ def heart_page():
 
 @app.route("/kidney", methods=['GET', 'POST'])
 def kidney_page():
-    return render_template('kidney.html', )
-
-
-@app.route("/stroke", methods=['GET', 'POST'])
-def stroke_page():
-    return render_template('stroke.html', )
+    return render_template('kidney.html')
 
 
 @app.route("/predict", methods=['GET', 'POST'])
