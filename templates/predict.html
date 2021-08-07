@@ -16,11 +16,17 @@ Prediction Page
     <div class="col-md-6">
         {% if pred == 1 %}
         <div class="card card-body alert alert-danger">
-            <center>Sorry! Please consult DOCTOR.</center>
+            <center>
+                <h2>Sorry! You have been Diagnosed with Risk</h2>
+                <p>The algorithm has diagnosed you with Risk based on your inputs. Please consult a Doctor.</p>
+            </center>
         </div>
         {% else %}
         <div class="card card-body alert alert-success">
-            <center>Great! You are HEALTHY.</center>
+            <center>
+                <h2>Great! You are HEALTHY </h2>
+			    <p>The algorithm has diagnosed you with no Risk based on your inputs. However it might be better to talk to a doctor regardless.</p>
+            </center>
         </div>
         {% endif %}
         <div class="row">
